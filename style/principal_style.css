@@ -15,16 +15,17 @@ table {
     margin-left: 1%;
     border: 2px solid #000;
     width: 98%;
-    padding: 0px;
+    padding: 1px;
     border-radius: 5px;
 }
 
 table tr th {
     border: 2px solid #000;
-    font-size: 20px;
+    font-size: 25px;
     border-radius: 5px;
     background-color: #5100b5cf;
     color: #fff;
+    height: 50px;
 }
 
 table tr td {
@@ -33,34 +34,26 @@ table tr td {
     border-radius: 5px;
     background-color: #fff;
     color: #5100b5cf;
+    height: 40px;
+    font-weight: 500;
 }
 
 table tr td a {
     padding: 2px;
-    border: 2px solid #000;
+    border: 1px solid #000;
     border-radius: 5px;
-    /* margin: 10px; */
 }
 
 table tr td a.adicionar {
     background-color: #0b471fa0;
     color: #fff;
-    font-size: 19px;
+    font-size: 20px;
     text-decoration: none;
-    padding: 2px 7%;
+    padding: 1% 5%;
     margin-left: 0%;
-}
+    margin: 7px;
 
-/* table tr td a.adicionar::after {
-    content: " ";
-    width: 0%;
-    height: 4px;
-    background-color: #00ff55;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 0.5s ease-in-out;
-} */
+}
 
 table tr td a.adicionar:hover {
     background-color: #099237;
@@ -72,7 +65,8 @@ table tr td a.editar {
     color: #fff;
     font-size: 20px;
     text-decoration: none;
-    padding: 2px 7%;
+    padding: 1% 5%;
+    margin: 7px;
 }
 
 table tr td a.editar:hover {
@@ -85,7 +79,8 @@ table tr td a.excluir {
     color: #fff;
     font-size: 20px;
     text-decoration: none;
-    padding: 2px 7%;
+    padding: 1% 5%;
+    margin: 7px;
 }
 
 table tr td a.excluir:hover {
@@ -100,6 +95,7 @@ table tr td a.excluir:hover {
     padding: 7px;
     border-radius: 5px;
     margin-left: 1%;
+    border: 2px solid #000;
 }
 
 .adicionar_novo:hover {
