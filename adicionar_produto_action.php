@@ -8,7 +8,7 @@
     $quantidade = filter_input(INPUT_POST, 'quantidade');
     $valor = filter_input(INPUT_POST, 'valor');
 
-    if($nome && $quantidade) {
+    if($nome && $quantidade && $valor) {
         $novoProduto = new Produto();
         $novoProduto->setNome($nome);
         $novoProduto->setQuantidade($quantidade);

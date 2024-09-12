@@ -12,10 +12,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style/principal_style.css">
-        <title>Document</title>
+        <title>Página principal</title>
     </head>
     <body>
-        <a class="adicionar_novo" href="adicionar_novo_produto.php">Adicionar Novo Produto</a>
+        <a class="adicionar_novo" href="adicionar_novo_produto.php">Adicionar Novo Produto 📲</a>
         <table>
             <tr>
                 <th>ID</th>
@@ -32,11 +32,11 @@
                     <td><?= $produto->getQuantidade(); ?></td>
                     <td>R$ <?= $produto->getValor(); ?>,00</td>
                     <td>
-                        <a class="adicionar" href="adicionar_produto.php">Adicionar</a>
+                        <a class="adicionar" href="vender_produto.php?id=<?= $produto->getId(); ?>">Vender 💵</a>
 
-                        <a class="editar" href="editar_produto.php?id=<?= $produto->getId(); ?>">Editar</a>
+                        <a class="editar" href="editar_produto.php?id=<?= $produto->getId(); ?>">Editar ⚙️</a>
 
-                        <a class="excluir" href="Excluir_produto.php?<?= $produto->getId(); ?>" onclick="return confirm('Tem certeza que deseja excluir?')">Excluir</a>
+                        <a class="excluir" href="Excluir_produto.php?<?= $produto->getId(); ?>" onclick="return confirm('Tem certeza que deseja excluir?')">Excluir 🚫</a>
                     </td>
                 </tr>
             <?php endforeach; ?>
