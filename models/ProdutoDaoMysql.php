@@ -81,7 +81,9 @@
 
         //DELETAR UM PRODUTO DO BANCO
         public function delete($id) {
-
+            $sql = $this->pdo->prepare("DELETE FROM produtos WHERE id = :id");
+            $sql->bindValue(':id', $id);
+            $sql->execute();
         }
 
 
