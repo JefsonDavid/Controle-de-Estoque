@@ -36,7 +36,7 @@
 
                         <a class="editar" href="editar_produto.php?id=<?= $produto->getId(); ?>">Editar ⚙️</a>
 
-                        <a class="excluir" href="Excluir_produto.php?<?= $produto->getId(); ?>" onclick="return confirm('Tem certeza que deseja excluir?')">Excluir 🚫</a>
+                        <a class="excluir" href="excluir_produto.php?id=<?= $produto->getId(); ?>" onclick="return confirm('Tem certeza que deseja excluir?')">Excluir 🚫</a>
                     </td>
                 </tr>
             <?php endforeach; ?>
