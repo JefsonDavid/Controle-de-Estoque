@@ -52,5 +52,6 @@
             public function add(Produto $p);
             public function update(Produto $p);
             public function delete($id);
+            public function vender(Produto $q);
         }
     

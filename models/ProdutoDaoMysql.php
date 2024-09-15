@@ -86,5 +86,14 @@
             $sql->execute();
         }
 
+        public function vender(Produto $q) {
+            $sql = $this->pdo->prepare("UPDATE produtos SET quantidade = :qnt, WHERE id = :id");
+
+            $sql->bindValue(':qnt', $q->getQuantidade());
+            $sql->execute();
+
+            return true;
+        }
+
 
     }
